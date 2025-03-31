@@ -1,0 +1,107 @@
+body {
+    background-color: #264653; /* Azul profundo */
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #1E3A8A; /* Azul medianoche */
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 15px 0;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.emotion-selection {
+    margin-top: 20px;
+}
+
+.emotion-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.emotion-btn {
+    background-color: #E9C46A; /* Arena cálida */
+    color: #264653; /* Azul profundo */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.emotion-btn.selected {
+    background-color: #A8DADC; /* Azul claro */
+}
+
+.recommend-btn {
+    background-color: #2A9D8F; /* Verde esmeralda */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.recommend-btn:hover {
+    background-color: #A8DADC; /* Azul claro */
+}
+
+.song-list {
+    margin-top: 20px;
+}
+
+.song-item {
+    display: flex;
+    align-items: center;
+    background-color: #1E3A8A; /* Azul medianoche */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.song-image {
+    width: 50px;
+    height: 50px;
+    background-color: #E9C46A; /* Arena cálida */
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.song-info {
+    color: white;
+}
