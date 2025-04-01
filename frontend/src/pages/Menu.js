@@ -15,8 +15,7 @@ export default function Menu() {
             <li><a href="/historial">Historial</a></li>
           </ul>
         </nav>
-      </aside>
-      
+      </aside>  
       <div className="main-content">   
         <section className="sync-section">
           <h1>Sincronízate con tus emociones</h1>

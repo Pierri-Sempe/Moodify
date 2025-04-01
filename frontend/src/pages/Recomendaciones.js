@@ -9,7 +9,7 @@ export default function Recomendaciones() {
         <nav>
         <ul>
             <li><a href="/Menu">Home</a></li>
-            <li><a href="/recomendaciones">Recomendación</a></li>
+            <li><a href="/Recomendaciones">Recomendación</a></li>
             <li><a href="/historial">Historial</a></li>
         </ul>
         </nav>
@@ -17,8 +17,8 @@ export default function Recomendaciones() {
 
       <main className="main-content">
         <header className="header">
+        &nbsp;
           <h1>Recomendaciones Generales</h1>
-          <button className="logout-btn">Logout</button>
         </header>
 
         <section className="emotion-selection">
