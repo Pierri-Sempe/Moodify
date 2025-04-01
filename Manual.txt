@@ -1,0 +1,23 @@
+Para poder probar el Frontend del actual proyecto debera realizar los sigueintes pasos
+
+#-------------------------------------------------------------------------------------
+
+1. Abrir la terminarl y dirigrte a la carpeta Frontend (seguir el ejemplo)
+    cd C:\Users\Usuario\Documents\Modify\frontend
+
+#-------------------------------------------------------------------------------------
+
+2. Ejecutar el siguiente comando:
+    npm start
+
+#-------------------------------------------------------------------------------------
+
+3. Si el comando anterior salto error, debera ejecutar este comando previamente:
+    npm install
+
+#-------------------------------------------------------------------------------------
+
+4. Para terminar el proceso de este frontend ejecute la siguiente combinacion de teclas en la terminal:
+    CTRL + C
+
+#-------------------------------------------------------------------------------------
