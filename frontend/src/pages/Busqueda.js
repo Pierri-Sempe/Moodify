@@ -26,9 +26,9 @@ export default function Busqueda() {
         <div className="busqueda-container">
             <div className="sidebar">
                 <h2>Moodify</h2>
-                <a href="#">Home</a>
-                <a href="#">Recomendación</a>
-                <a href="#">Historial</a>
+                <li><a href="/Menu">Home</a></li>
+                <li><a href="/recomendaciones">Recomendación</a></li>
+                <li><a href="/historial">Historial</a></li>
             </div>
             <div className="main-content">
                 <h2>Según tus emociones...</h2>

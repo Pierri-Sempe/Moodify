@@ -7,9 +7,11 @@ export default function Recomendaciones() {
       <aside className="sidebar">
         <h2 className="logo">Moodify</h2>
         <nav>
-          <a href="#">Home</a>
-          <a href="#">Recomendación</a>
-          <a href="#">Historial</a>
+        <ul>
+            <li><a href="/Menu">Home</a></li>
+            <li><a href="/recomendaciones">Recomendación</a></li>
+            <li><a href="/historial">Historial</a></li>
+        </ul>
         </nav>
       </aside>
 

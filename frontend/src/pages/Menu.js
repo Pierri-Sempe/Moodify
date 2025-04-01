@@ -10,8 +10,8 @@ export default function Menu() {
       <h2>Moodify</h2>
         <nav>
           <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/recomendacion">Recomendación</a></li>
+            <li><a href="/Menu">Home</a></li>
+            <li><a href="/recomendaciones">Recomendación</a></li>
             <li><a href="/historial">Historial</a></li>
           </ul>
         </nav>
@@ -26,10 +26,8 @@ export default function Menu() {
           <button className="search-button" a href="/busqueda">Realizar búsqueda</button>
         </section>
       </div>
-<div>
-
-  
-<section className="dashboard">
+      <div>
+        <section className="dashboard">
           <h2>Dashboard personal</h2>
           <p>Tus emociones de la semana</p>
           <div className="dashboard-box"></div>
@@ -37,8 +35,7 @@ export default function Menu() {
           <p>Emociones positivas vs negativas</p>
           <div className="dashboard-box"></div>
           </section>
-</div>
-
+      </div>
     </div>
   );
 }
