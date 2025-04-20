@@ -2,34 +2,34 @@ body {
     background-color: #264653; /* Azul profundo */
     color: white;
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
+  }
+  
+  .home-container {
+    position:static;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    position: relative;
-}
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    padding: 2rem;
+  }
+  
+  .main-content {
+    max-width: 800px;
+    margin-left: -10px; /* o prueba con -10px si es muy agresivo */
+    margin-top: 50px;
+  }  
 
-.nav-bar {
+  .nav-bar {
     position: absolute;
     top: 20px;
     right: 20px;
-}
-
-.nav-links {
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.nav-link {
-    color: #2A9D8F; /* Verde esmeralda */
-    text-decoration: none;
-    font-size: 16px;
-    display: inline-block;
-}
+    gap: 20px;
+  }
+  
 
 .title {
     font-size: 72px;

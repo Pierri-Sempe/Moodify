@@ -7,12 +7,22 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-var app = express();
+const app = express();
+
+const sequelize = require('./config/db'); // conexión a MySQL con Sequelize
+
+const Usuario = require('./models/Usuario'); // debe coincidir con el nombre del archivo
+
+const routes = require('./routes');
+
+const cors = require('cors');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+app.use('/api', routes);
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -37,5 +47,21 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+// Probar la conexión con la base de datos
+sequelize.authenticate()
+  .then(() => console.log(' Conectado a MySQL correctamente'))
+  .catch(err => console.error(' Error al conectar a MySQL:', err));
+
+sequelize.sync({ alter: true })
+  .then(() => console.log('Tablas sincronizadas'))
+  .catch(err => console.error('Error al sincronizar tablas:', err));
+
+  const PORT = process.env.PORT || 5000;
+
+  app.listen(PORT, () => {
+    console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
+  });
+  
 
 module.exports = app;
